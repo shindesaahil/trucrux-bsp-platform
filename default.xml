@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="kirkstone"/>
+
+  <remote fetch="https://git.yoctoproject.org/git"                            name="yocto"/>
+  <remote fetch="https://github.com/Freescale"                                name="freescale"/>
+  <remote fetch="https://git.openembedded.org"                                name="oe"/>
+  <remote fetch="https://github.com/meta-qt5"                                 name="QT5"/>
+  <remote fetch="https://github.com/sbabic"                                   name="sbabic"/>
+  <remote fetch="https://github.com/Trucrux"                                  name="trucrux"/>
+
+  <project remote="yocto"     revision="3272e64a731280206d13fe746e4b9e3a5e7c73a8" upstream="kirkstone"   name="poky"                    path="sources/poky"/>
+  <project remote="yocto"     revision="3e9ef23d98aa842cf84251a27c9b8dde8925ea61" upstream="kirkstone"   name="meta-freescale"          path="sources/meta-freescale"/>
+
+  <project remote="oe"        revision="529620141e773080a6a7be4615fb7993204af883" upstream="kirkstone"   name="meta-openembedded"       path="sources/meta-openembedded"/>
+
+  <project remote="oe"        revision="f02882e2aa9279ca7becca8d0cedbffe88b5a253" upstream="kirkstone"   name="meta-python2"            path="sources/meta-python2"/>
+
+  <project remote="trucrux"   revision="6c3be640482ef95717e95c0e2bfe0249de340953" upstream="kirkstone"   name="trucrux-bsp-base"        path="sources/base">
+	<linkfile dest="README" src="README"/>
+	<linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="freescale" revision="6dbdabe09e410818dcda8801e1cbd8b68d539e63" upstream="kirkstone"           name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
+  <project remote="freescale" revision="d5bbb487b2816dfc74984a78b67f7361ce404253" upstream="kirkstone"           name="meta-freescale-distro"   path="sources/meta-freescale-distro"/>
+  <project remote="freescale" revision="7c9ad5c4d9e76e261ddf63fb7bc87fc244f55a38" upstream="kirkstone"           name="Documentation"           path="sources/Documentation"/>
+
+  <project remote="QT5"       revision="bff5bd937f0776166e81a63f3dd39ede348ef758" upstream="kirkstone"           name="meta-qt5"                path="sources/meta-qt5"/>
+  <project remote="sbabic"    revision="7a85c71f40c4bf445f041fa7aad70733c9cbc0ba" upstream="kirkstone"           name="meta-swupdate"           path="sources/meta-swupdate"/>
+  <project remote="yocto"     revision="e60f59f3567b78286ea34337dbae468a5f18f1c6" upstream="kirkstone"           name="meta-virtualization"     path="sources/meta-virtualization"/>
+  <project remote="trucrux"   revision="24a81ef6c66e77b1812a242939087fb2d8430aab" upstream="kirkstone"           name="meta-trucrux"            path="sources/meta-trucrux"/>
+</manifest>
