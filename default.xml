@@ -29,5 +29,5 @@
   <project remote="QT5"       revision="bff5bd937f0776166e81a63f3dd39ede348ef758" upstream="kirkstone"           name="meta-qt5"                path="sources/meta-qt5"/>
   <project remote="sbabic"    revision="7a85c71f40c4bf445f041fa7aad70733c9cbc0ba" upstream="kirkstone"           name="meta-swupdate"           path="sources/meta-swupdate"/>
   <project remote="yocto"     revision="e60f59f3567b78286ea34337dbae468a5f18f1c6" upstream="kirkstone"           name="meta-virtualization"     path="sources/meta-virtualization"/>
-  <project remote="trucrux"   revision="42670f7cf7f37d47baa6b5fcb5b806cb5e1e7c89" upstream="kirkstone"           name="meta-trucrux"            path="sources/meta-trucrux"/>
+  <project remote="trucrux"   revision="350fb486f0e5836f8fd591c181c07c4fa016054d" upstream="kirkstone"           name="meta-trucrux"            path="sources/meta-trucrux"/>
 </manifest>
